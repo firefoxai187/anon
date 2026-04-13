@@ -18,7 +18,7 @@ export default async function SubstackFeed() {
     },
   });
 
-  let posts = [];
+  let posts: (Parser.Item & CustomItem)[] = [];
   try {
     // We use next fetch to leverage Next.js native caching
     const res = await fetch("https://0xjustin.substack.com/feed", {
