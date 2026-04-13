@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# JUSTIN.md Portfolio
 
-## Getting Started
+A recruiter-facing, terminal-inspired portfolio for Justin Nguyen, Growth Specialist and Web3 Native.
 
-First, run the development server:
+## Tech Stack
+- **Framework**: Next.js 15 (App Router)
+- **Styling**: Tailwind CSS 4
+- **Animations**: Framer Motion
+- **AI**: Gemini 2.0 Flash (via `@google/generative-ai`)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Setup
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. **Clone and Install**:
+   ```bash
+   npm install
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. **Environment Variables**:
+   Create a `.env.local` file in the root directory:
+   ```env
+   GEMINI_API_KEY=your_google_ai_studio_api_key
+   ```
+   Get a free key at [aistudio.google.com](https://aistudio.google.com/apikey).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. **Run Dev Server**:
+   ```bash
+   npm run dev
+   ```
 
-## Learn More
+## How to Update the AI System Prompt
 
-To learn more about Next.js, take a look at the following resources:
+The AI chatbox logic is located in `app/api/chat/route.ts`. 
+To update the data the AI uses to answer questions:
+1. Open `app/api/chat/route.ts`.
+2. Locate the `SYSTEM_PROMPT` constant.
+3. Update the `CORE EXPERIENCE`, `IDENTITY`, or `SKILLS` sections with your new CV info.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Design Philosophy
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Accent**: Electric Cyan (#00FFFF)
+- **Typography**: Space Mono (Display) & Geist Sans (Body)
+- **Effects**: Scanline overlays, CRT glow, and redacted text reveals.
