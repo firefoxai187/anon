@@ -35,7 +35,7 @@ export default function TerminalHero() {
           transition={{ duration: 0.5 }}
           className="inline-block px-2 py-1 bg-accent/10 border border-accent/20 text-accent text-xs font-mono mb-4"
         >
-          // VERSION 2.0.4 — SYSTEM_READY
+          // KERNEL_ID: [REDACTED] — SYSTEM_READY
         </motion.div>
         
         <h1 className="text-6xl md:text-8xl font-mono font-bold tracking-tighter group relative">

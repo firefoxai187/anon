@@ -2,9 +2,10 @@
 
 import { motion } from "framer-motion";
 import { socialLinks } from "@/lib/data";
+import EmailLink from "./EmailLink";
 
 export default function Footer() {
-  const techStack = ["Next.js 15", "Tailwind CSS 4", "Framer Motion", "Gemini 2.0 Flash"];
+  const techStack = ["Next.js", "Tailwind CSS", "Framer Motion", "Gemini Flash"];
   
   return (
     <footer className="py-12 px-6 border-t border-zinc-900 bg-black mt-20">
@@ -21,15 +22,25 @@ export default function Footer() {
         <div className="flex flex-col items-center md:items-end gap-4">
           <div className="flex flex-wrap gap-4">
             {socialLinks.map(link => (
-              <a
-                key={link.label}
-                href={link.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs font-mono text-zinc-500 hover:text-accent transition-colors"
-              >
-                // {link.label}
-              </a>
+              link.label === "EMAIL" && (link as any).user ? (
+                <EmailLink 
+                  key={link.label}
+                  user={(link as any).user}
+                  domain={(link as any).domain}
+                  label={`// ${link.label}`}
+                  className="text-xs font-mono text-zinc-500 hover:text-accent transition-colors"
+                />
+              ) : (
+                <a
+                  key={link.label}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs font-mono text-zinc-500 hover:text-accent transition-colors"
+                >
+                  // {link.label}
+                </a>
+              )
             ))}
           </div>
           

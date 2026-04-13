@@ -275,5 +275,5 @@ export const socialLinks = [
   { label: "TWITTER/X", url: "https://x.com/0xJustinnn" },
   { label: "SUBSTACK", url: "https://0xjustin.substack.com/" },
   { label: "TELEGRAM", url: "https://t.me/imjustinnn" },
-  { label: "EMAIL", url: "mailto:callmejustinnn@gmail.com" }
+  { label: "EMAIL", url: "mailto:callmejustinnn@gmail.com", user: "callmejustinnn", domain: "gmail.com" }
 ];
