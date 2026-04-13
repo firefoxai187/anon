@@ -50,10 +50,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${spaceMono.variable} font-sans bg-background text-foreground min-h-full flex flex-col selection:bg-accent/30 selection:text-accent`}
       >
-        <div className="fixed inset-0 pointer-events-none z-[40] bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.03]" />
-        <div className="fixed inset-0 pointer-events-none z-[40] bg-scanlines opacity-[0.02] mix-blend-overlay" />
-        <TopBar />
-        {children}
+        <ThemeProvider>
+          <div className="fixed inset-0 pointer-events-none z-[40] bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.03]" />
+          <div className="fixed inset-0 pointer-events-none z-[40] bg-scanlines opacity-[0.02] mix-blend-overlay" />
+          <TopBar />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
