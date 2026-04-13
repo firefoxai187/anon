@@ -34,7 +34,7 @@ const nextConfig: NextConfig = {
               "style-src 'self' 'unsafe-inline'",
               "img-src 'self' data: blob: https: https://grainy-gradients.vercel.app",
               "font-src 'self' https://fonts.gstatic.com",
-              "connect-src 'self' https://0xjustin.substack.com",
+              "connect-src 'self' https://0xjustin.substack.com https://formsubmit.co",
               "object-src 'none'",
               "base-uri 'self'",
               "form-action 'self'",
