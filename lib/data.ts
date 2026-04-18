@@ -43,7 +43,7 @@ export const experienceData: Experience[] = [
     slug: "lisk",
     company: "LISK",
     headline: "SEA Ambassador / Ecosystem Growth",
-    date: "APR 2025 - PRESENT",
+    date: "APR 2025 - MAY 2026",
     tags: ["Ecosystem Growth", "BD", "Event Execution"],
     images: [
       "/images/Lisk/Main headers/1.png",
