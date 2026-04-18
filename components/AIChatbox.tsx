@@ -112,7 +112,67 @@ export default function AIChatbox() {
                         ? "bg-zinc-200 dark:bg-zinc-900 border-zinc-300 dark:border-zinc-800 text-zinc-900 dark:text-zinc-200" 
                         : "bg-accent/10 border-accent/20 text-accent/90"
                     )}>
-                      <div className="whitespace-pre-wrap">{m.content}</div>
+                      <div className="text-xs space-y-1">
+                        {m.content.split('\n').map((line, lineIndex) => {
+                          if (!line.trim()) return <div key={lineIndex} className="h-2" />;
+                          
+                          // Headings
+                          if (line.startsWith('### ')) {
+                            return <h3 key={lineIndex} className="font-semibold text-sm mt-3 mb-1 uppercase tracking-wider">{line.replace('### ', '')}</h3>;
+                          }
+                          if (line.startsWith('## ')) {
+                            return <h2 key={lineIndex} className="font-bold text-sm mt-4 mb-2 uppercase tracking-wide">{line.replace('## ', '')}</h2>;
+                          }
+                          if (line.startsWith('# ')) {
+                            return <h1 key={lineIndex} className="font-bold text-base mt-4 mb-2 uppercase tracking-wide">{line.replace('# ', '')}</h1>;
+                          }
+
+                          // List Items
+                          if (line.trim().startsWith('- ') || line.trim().startsWith('* ')) {
+                            const text = line.trim().substring(2);
+                            return (
+                              <div key={lineIndex} className="flex gap-2 ml-2">
+                                <span className="opacity-60">{'>'}</span>
+                                <span className="flex-1 opacity-90 leading-relaxed">
+                                  {text.split(/(\*\*.*?\*\*|\*.*?\*|`.*?`)/g).map((part, i) => {
+                                    if (part.startsWith('**') && part.endsWith('**')) return <strong key={i} className="font-bold opacity-100">{part.slice(2, -2)}</strong>;
+                                    if (part.startsWith('`') && part.endsWith('`')) return <code key={i} className="px-1 py-0.5 bg-zinc-800/30 rounded text-[10px] opacity-100">{part.slice(1, -1)}</code>;
+                                    return <span key={i}>{part}</span>;
+                                  })}
+                                </span>
+                              </div>
+                            );
+                          }
+
+                          // Numbered Lists
+                          const numMatch = line.match(/^(\d+\.)\s(.*)/);
+                          if (numMatch) {
+                            return (
+                              <div key={lineIndex} className="flex gap-2 ml-2 mt-1">
+                                <span className="opacity-60">{numMatch[1]}</span>
+                                <span className="flex-1 opacity-90 leading-relaxed">
+                                  {numMatch[2].split(/(\*\*.*?\*\*|\*.*?\*|`.*?`)/g).map((part, i) => {
+                                    if (part.startsWith('**') && part.endsWith('**')) return <strong key={i} className="font-bold opacity-100">{part.slice(2, -2)}</strong>;
+                                    if (part.startsWith('`') && part.endsWith('`')) return <code key={i} className="px-1 py-0.5 bg-zinc-800/30 rounded text-[10px] opacity-100">{part.slice(1, -1)}</code>;
+                                    return <span key={i}>{part}</span>;
+                                  })}
+                                </span>
+                              </div>
+                            );
+                          }
+
+                          // Normal Text
+                          return (
+                            <p key={lineIndex} className="leading-relaxed opacity-90">
+                              {line.split(/(\*\*.*?\*\*|\*.*?\*|`.*?`)/g).map((part, i) => {
+                                if (part.startsWith('**') && part.endsWith('**')) return <strong key={i} className="font-bold opacity-100">{part.slice(2, -2)}</strong>;
+                                if (part.startsWith('`') && part.endsWith('`')) return <code key={i} className="px-1 py-0.5 bg-zinc-800/30 rounded text-[10px] opacity-100">{part.slice(1, -1)}</code>;
+                                return <span key={i}>{part}</span>;
+                              })}
+                            </p>
+                          );
+                        })}
+                      </div>
                     </div>
                     {m.role === "user" && <User size={14} className="text-zinc-500 mt-1 flex-shrink-0" />}
                   </motion.div>
