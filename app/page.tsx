@@ -13,7 +13,7 @@ export default function Home() {
       <ExperienceSection />
       <SkillGrid />
       <SubstackFeed />
-      <AIChatbox />
+      {/* <AIChatbox /> */}
       <ContactSection />
       <Footer />
     </main>
