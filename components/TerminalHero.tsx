@@ -39,9 +39,9 @@ export default function TerminalHero() {
         </motion.div>
         
         <h1 className="text-6xl md:text-8xl font-mono font-bold tracking-tighter group relative">
-          <span className="relative z-10">ANON.md</span>
+          <span className="relative z-10">JUSTIN.md</span>
           <span className="absolute inset-0 text-accent opacity-0 group-hover:opacity-100 group-hover:animate-glitch select-none pointer-events-none">
-            ANON.md
+            JUSTIN.md
           </span>
         </h1>
         
@@ -88,7 +88,7 @@ export default function TerminalHero() {
           onClick={() => window.dispatchEvent(new Event('open-ai-chat'))}
           className="px-8 py-3 bg-zinc-100 dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-700 text-zinc-600 dark:text-zinc-300 font-mono hover:text-accent dark:hover:text-accent transition-all transform hover:-translate-y-1 cursor-pointer"
         >
-          // CHAT_WITH_ANON.md
+          // CHAT_WITH_JUSTIN.md
         </button>
       </div>
     </section>

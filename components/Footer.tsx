@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
         <div className="space-y-4">
           <div className="text-2xl font-mono font-bold tracking-tighter">
-            ANON<span className="text-accent text-sm ml-1">.md</span>
+            JUSTIN<span className="text-accent text-sm ml-1">.md</span>
           </div>
           <div className="text-zinc-600 font-mono text-xs">
             © {new Date().getFullYear()} — SYSTEM_TERMINATED_ACCESS_REVOKED
