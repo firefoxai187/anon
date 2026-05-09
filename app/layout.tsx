@@ -14,24 +14,24 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Justin.md | Growth Specialist",
+  title: "Anon.md | Growth Specialist",
   description: "Growth specialist & Web3 native. Turning ideas into the talk of CT.",
   openGraph: {
-    title: "Justin.md | Growth Specialist",
+    title: "Anon.md | Growth Specialist",
     description: "Growth specialist & Web3 native. Turning ideas into the talk of CT.",
     images: [
       {
         url: "/images/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Justin.md — Growth Specialist",
+        alt: "Anon.md — Growth Specialist",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Justin.md | Growth Specialist",
+    title: "Anon.md | Growth Specialist",
     description: "Growth specialist & Web3 native. Turning ideas into the talk of CT.",
     images: ["/images/og-image.png"],
   },

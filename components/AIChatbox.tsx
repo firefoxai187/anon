@@ -82,7 +82,7 @@ export default function AIChatbox() {
                 <div className="flex items-center gap-2">
                   <Terminal size={14} className="text-zinc-500" />
                   <span className="text-[10px] font-mono text-zinc-600 uppercase tracking-widest leading-none">
-                    JUSTIN_SESSION_v2.0
+                    ANON_SESSION_v2.0
                   </span>
                 </div>
                 <button onClick={() => setIsOpen(false)} className="text-zinc-500 hover:text-accent transition-colors">

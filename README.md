@@ -1,5 +1,6 @@
+# ANON.md Portfolio
 
-A recruiter-facing, terminal-inspired portfolio for Justin Nguyen, Growth Specialist and Web3 Native.
+A recruiter-facing, terminal-inspired portfolio for Anon, Growth Specialist and Web3 Native.
 
 ## Tech Stack
 - **Framework**: Next.js 15 (App Router)
