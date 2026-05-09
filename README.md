@@ -1,4 +1,3 @@
-# JUSTIN.md Portfolio
 
 A recruiter-facing, terminal-inspired portfolio for Justin Nguyen, Growth Specialist and Web3 Native.
 
