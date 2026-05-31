@@ -6,8 +6,8 @@ import { cn } from "@/lib/utils";
 
 const stats = [
   { label: "IMPRESSIONS", value: "2M+" },
-  { label: "WALLETS_ONBOARDED", value: "60K" },
-  { label: "MEETUPS_HOSTED", value: "20+" },
+  { label: "WALLETS_ONBOARDED", value: "60K+" },
+  { label: "SEA_MEETUPS_HOSTED", value: "20+" },
   { label: "ONBOARDED_PROJECTS", value: "50+" },
   { label: "EXP_LEVEL", value: "SENIOR" },
 ];

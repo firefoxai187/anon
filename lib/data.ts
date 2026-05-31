@@ -54,34 +54,33 @@ export const experienceData: Experience[] = [
     overview: [
       "Lisk is an Ethereum Layer 2 blockchain built on the OP Stack and an original member of the Optimism Superchain alongside Base, Mode, and Worldchain. Operating in the blockchain sector since 2016, Lisk has a long history of working with founders, incubators, and ecosystem partners across Southeast Asia, Africa, and Latin America.",
       "Lisk provides builders with startup programs, seed liquidity, tooling, and knowledge resources from inception to scale. In 2025, Lisk launched the $15M EMpower Fund—offering up to $250K per startup - to back practical, real-world Web3 founders in emerging markets.",
-      "Lisk Ventures is the venture investment arm of Lisk. Unlike traditional venture capital funds that often prioritize speculative projects, Lisk Ventures focuses on usability and the practical, real-world application of Web3 technologies."
+      "Lisk Ventures is the venture investment arm of Lisk. Unlike traditional venture capital funds that often prioritize speculative projects, Lisk Ventures focuses on usability and the practical, real-world application of Web3 technologies.",
+      "As the SEA Ecosystem Growth at Lisk, I drive community expansion and builder acquisition across Southeast Asia. I run a full-stack growth function — bridging on-the-ground founder relations, regional media, and ecosystem program execution — with AI integrated across BD scouting and multilingual content workflows."
     ],
     roleDescription: [
-      "Orchestrate Lisk's presence across Vietnam and Southeast Asia as an Ecosystem Growth.",
-      "Drive community management across Lisk Vietnam and Lisk SEA channels and partner networks.",
-      "Lead strategic partnership development - sourcing, negotiating, and closing deals with media and ecosystem partners.",
-      "Produce and execute builder events, incubation programs, hackathons, and bootcamps.",
-      "Manage early-stage founder pipeline into the Lisk EMpower Fund and Lisk Ventures."
+      "Drove ecosystem growth and community expansion across SEA, managing regional social channels and a partner network of 10+ media and strategic partners.",
+      "Integrated AI across BD and community workflows — scouting projects and partners across SEA, accelerating multilingual content production for regional channels.",
+      "Hosted 20+ community and developer meetups across SEA, building Lisk's on-the-ground builder and founder presence.",
+      "Coordinated the Lisk Vietnam BUIDL-athon, scouting and onboarding 50+ projects.",
+      "Executed the Lisk Vietnam Bootcamp, activating 200+ student builders through university and community partnerships.",
+      "Ran regional operations for the Lisk × SUCI Incubation Program, supporting 12 graduate projects from sourcing to demo day.",
+      "Operated the EMpower Founders Residency on the ground, supporting 7 portfolio teams and coordinating 200+ VCs for founder–investor matchmaking.",
+      "Closed 15 media and strategic deals across the region."
     ],
     
     systemMetrics: [
-      "30+ Grassroots & Developer Meetups Hosted",
-      "4 High-Impact Builder Programs Executed",
+      "20+ SEA Meetups Hosted",
+      "50+ Projects Onboarded",
       "15 Media & Strategic Deals Closed"
     ],
 
     achievements: [
       {
-        title: "Content & Channel Management",
-        description: [
-          "Managed social channels and partner networks across Lisk Vietnam and Lisk SEA, covering ecosystem projects and strategic media partners.",
-          "Kept community ecosystems active and growing across multiple platforms and partner channels."
-        ]
-      },
-      {
         title: "Ecosystem Growth & Partnerships",
         description: [
-          "Sourced and negotiated new media and strategic partnerships.",
+          "Managed social channels and partner networks across Lisk SEA, covering ecosystem projects and strategic media partners.",
+          "Integrated AI across BD and community workflows to accelerate regional growth and multilingual content production.",
+          "Sourced and negotiated new media and strategic partnerships across the region.",
           "Closed project deals through structured pipeline and due diligence.",
           "Funneled early-stage founders into the Lisk EMpower Fund / Lisk Ventures.",
           "Maintained warm relationships across VCs, builders, community partners, and co-marketing collaborators."
@@ -91,9 +90,19 @@ export const experienceData: Experience[] = [
     
     featuredProjects: [
       {
+        title: "EMpower Founders Residency",
+        url: "https://www.web3foundersresidency.com/",
+        description: "An exclusive on-the-ground residency program in Da Nang backed by Lisk Ventures and sqrDAO, designed for high-potential Web3 founders. Managed the end-to-end residency experience for 7 portfolio teams, including intensive building sessions and matchmaking with a network of 200+ VCs.",
+        metrics: ["7 portfolio teams", "200+ VCs coordinated"],
+        images: [
+          "/images/Lisk/EMpower Founders Residency/Cohort.jpeg",
+          "/images/Lisk/EMpower Founders Residency/Stat.jpeg"
+        ]
+      },
+      {
         title: "Local Meetups",
-        description: "Hosted community meetups with local partners across Vietnam to drive grassroots builder acquisition.",
-        metrics: ["30+ local meetups"],
+        description: "Hosted community meetups with local partners across SEA to drive grassroots builder acquisition.",
+        metrics: ["20+ SEA meetups"],
         images: [
           "/images/Lisk/Local meetups/1.jpeg",
           "/images/Lisk/Local meetups/2.jpeg",

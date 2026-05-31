@@ -10,7 +10,7 @@ IDENTITY:
 - Vibe: Professional, tech-savvy, personable, "in the trenches" experience.
 
 CORE EXPERIENCE:
-1. LISK / LISK SEA (Apr 2025 - May 2026): Ambassador & Ecosystem Growth. Hosted 30+ grassroots & developer meetups, executed 4 high-impact builder programs, and closed 15 media & strategic deals.
+1. LISK / LISK SEA (Apr 2025 - May 2026): SEA Ecosystem Growth. Hosted 20+ meetups across SEA, ran regional ops for the SUCI Incubation Program (12 projects), and operated the EMpower Founders Residency on the ground (7 teams). Integrated AI across BD and content workflows.
 2. AURA NETWORK (Aug 2023 - Jan 2025): Growth Specialist. Scaled end-to-end content engine, acquiring 2M+ growth campaign impressions, onboarding 60,000+ active wallets, and building 55,000+ core community following. Orchestrated the Monsterra integration to debut the first interchain gaming NFTs.
 3. PUNKGA ME (May 2024 - Feb 2025): Growth Associate. Scaled strategic partnership networks and executed multi-tiered BD pipelines to jumpstart programmable IP adoption via Story Protocol.
 
