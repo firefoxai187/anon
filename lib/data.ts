@@ -92,11 +92,14 @@ export const experienceData: Experience[] = [
       {
         title: "EMpower Founders Residency",
         url: "https://www.web3foundersresidency.com/",
-        description: "An exclusive on-the-ground residency program in Da Nang backed by Lisk Ventures and sqrDAO, designed for high-potential Web3 founders. Managed the end-to-end residency experience for 7 portfolio teams, including intensive building sessions and matchmaking with a network of 200+ VCs.",
+        description: "An exclusive on-the-ground residency program in Da Nang backed by Lisk Ventures and sqrDAO, designed for high-potential Web3 founders. I contributed to the strategic planning, execution, and on-the-ground management of the end-to-end residency experience for 7 portfolio teams. This included facilitating intensive building sessions and coordinating matchmaking events with a network of 200+ VCs.",
         metrics: ["7 portfolio teams", "200+ VCs coordinated"],
         images: [
-          "/images/Lisk/EMpower Founders Residency/Cohort.jpeg",
-          "/images/Lisk/EMpower Founders Residency/Stat.jpeg"
+          "/images/Lisk/EMpower Founders Residency/EMpower 1.jpeg",
+          "/images/Lisk/EMpower Founders Residency/Empower 2.jpeg",
+          "/images/Lisk/EMpower Founders Residency/EMpower 3.jpeg",
+          "/images/Lisk/EMpower Founders Residency/Empower 4.jpg",
+          "/images/Lisk/EMpower Founders Residency/EMpower 5.jpeg"
         ]
       },
       {
